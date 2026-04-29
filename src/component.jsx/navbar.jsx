@@ -3,8 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 export function Navi(){
     return(
         <>
-        <nav>
-          <ul>
+        <nav className="header">
+          <ul >
 
             <li>
                  <Link to="/">home</Link>
