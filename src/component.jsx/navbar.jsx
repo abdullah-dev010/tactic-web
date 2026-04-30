@@ -7,19 +7,19 @@ export function Navi(){
           <ul >
 
             <li>
-                 <Link to="/">home</Link>
+                 <Link to="/">Home</Link>
             </li>
 
             <li>
-                <Link to="/about">about</Link>
+                <Link to="/about">About</Link>
             </li>
 
             <li>
-               <Link to="/services">service</Link>
+               <Link to="/services">Services</Link>
             </li> 
 
             <li>
-                <Link to="/contacts">contacts</Link>
+                <Link to="/contacts">Contact</Link>
             </li>
              
           </ul>

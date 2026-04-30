@@ -13,12 +13,11 @@ export function Home() {
           We build modern, fast and scalable digital solutions for your business.
         </p>
 
-        <Link to="/contact">
-          <button className="btn">Get Started</button>
+        <Link to="/services">
+          <button className="home-btn">Get Started</button>
         </Link>
       </section>
 
-      {/* ABOUT SECTION */}
       <section className="about">
         <h2>About Us</h2>
 

@@ -1,11 +1,11 @@
-/* General container */
+
 .home-container {
   font-family: Arial, sans-serif;
   color: #222;
   line-height: 1.6;
 }
 
-/* HERO SECTION */
+
 .hero {
   background: linear-gradient(135deg, #4f46e5, #3b82f6);
   color: white;
@@ -22,27 +22,35 @@
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto 25px auto;
+    color: white !important
 }
 
-/* BUTTON */
-.btn {
-  background: white;
-  color: #4f46e5;
-  padding: 12px 25px;
+
+.home-btn {
+  width: auto;          /* IMPORTANT FIX */
+  display: inline-block;
+ background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 12px 26px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
 }
 
-.btn:hover {
-  background: #e0e7ff;
-  transform: scale(1.05);
+.home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
 }
 
-/* ABOUT SECTION */
+.home-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+}
+
 .about {
   padding: 80px 20px;
   text-align: center;
@@ -61,7 +69,7 @@
   color: #555;
 }
 
-/* SERVICES SECTION */
+
 .services {
   padding: 80px 20px;
   text-align: center;
@@ -72,7 +80,6 @@
   margin-bottom: 30px;
 }
 
-/* SERVICE CARDS */
 .service-list {
   display: flex;
   justify-content: center;
@@ -119,11 +126,10 @@
   color: white;
 }
 .header {
-  background: #1e3a8a;   /* Outclass Dark Blue */
+  background: #1e3a8a;
   padding: 15px 0;
 }
 
-/* ul styling */
 .header ul {
   list-style: none;
   margin: 0;
@@ -131,13 +137,12 @@
   text-align: center;
 }
 
-/* li inline karne ke liye */
 .header li {
   display: inline-block;
   margin: 0 20px;
 }
 
-/* TEXT WHITE — ye main fix hai */
+
 .header a {
   color: white;
   text-decoration: none;
@@ -145,7 +150,6 @@
   font-weight: bold;
 }
 
-/* hover effect */
 .header a:hover {
   color: #38bdf8;
 }
