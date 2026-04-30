@@ -1,7 +1,7 @@
 import "./about.css";
 
 export function About() {
-    return (
+    return {
         <div className="about-page">
 
             <h1>About Us</h1>
