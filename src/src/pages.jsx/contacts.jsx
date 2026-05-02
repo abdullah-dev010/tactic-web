@@ -43,7 +43,7 @@ export function Contacts() {
                 />
                 {errors.secureemail && <p>{errors.secureemail.message}</p>}
 
-                {/* PHONE NUMBER */}
+               
                 <label>Contact Number</label>
                 <input
                     type="tel"
@@ -57,7 +57,7 @@ export function Contacts() {
                 />
                 {errors.contactnumber && <p>{errors.contactnumber.message}</p>}
 
-                {/* MESSAGE */}
+               
                 <label>Message</label>
                 <textarea
                     rows="5"

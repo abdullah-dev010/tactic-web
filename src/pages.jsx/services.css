@@ -1,55 +1,93 @@
 .heading {
     text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #1a237e;
+    font-size: 42px;
+    font-weight: 800;
+    margin-top: 30px;
+    color: #0f172a;
     letter-spacing: 1px;
+    position: relative;
 }
-/* .overview {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-   text-align: center;
-} */
-.overview p {
-  white-space: normal;
 
- 
+.heading::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
 }
+
+.overview {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #475569;
+    background: #f8fafc;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+
+
 .request {
-    padding: 10px 20px;      
-    background-color: #007bff; 
-    color: white;           
-    border: none;            
-    border-radius: 5px;     
-    cursor: pointer;         
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
 }
 
 .request:hover {
-    background-color: #0056b3; 
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,123,255,0.4);
 }
+
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    padding: 20px;
 }
 
 .card {
-    width: 250px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 28px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    border-color: #e2e8f0;
 }
-

@@ -5,6 +5,7 @@
   line-height: 1.6;
 }
 
+
 .hero {
   background: linear-gradient(135deg, #4f46e5, #3b82f6);
   color: white;
@@ -15,32 +16,39 @@
 .hero h1 {
   font-size: 42px;
   margin-bottom: 15px;
-  letter-spacing: 1px;
 }
 
 .hero p {
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto 25px auto;
-  opacity: 0.9;
-    color: #ffffff;
+    color: white !important
 }
 
-.btn {
-  background: white;
-  color: #4f46e5;
-  padding: 12px 25px;
+
+.home-btn {
+  width: auto;         
+  display: inline-block;
+ background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 12px 26px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
 }
 
-.btn:hover {
-  background: #e0e7ff;
-  transform: scale(1.05);
+.home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+}
+
+.home-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
 }
 
 .about {
@@ -71,7 +79,6 @@
   font-size: 30px;
   margin-bottom: 30px;
 }
-
 
 .service-list {
   display: flex;
@@ -119,10 +126,9 @@
   color: white;
 }
 .header {
-  background: #1e3a8a;   
+  background: #1e3a8a;
   padding: 15px 0;
 }
-
 
 .header ul {
   list-style: none;
@@ -143,7 +149,6 @@
   font-size: 16px;
   font-weight: bold;
 }
-
 
 .header a:hover {
   color: #38bdf8;
