@@ -1,13 +1,12 @@
 form {
     max-width: 500px;
-    margin: 50px auto;
+    margin: 60px auto;
     padding: 30px;
     background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     font-family: Arial, sans-serif;
 }
-
 label {
     display: block;
     margin-top: 15px;
@@ -49,6 +48,12 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,123,255,0.25);
 }
 
 button:hover {
