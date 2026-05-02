@@ -1,6 +1,6 @@
 import "./about.css";
 
-export function About() {
+export function About() [
     return {
         <div className="about-page">
 
